@@ -16,12 +16,24 @@
     font-weight: bold;
     color: white;
   }
+
   &__navigation {
     a {
       padding-left: 30px;
       color: white;
     }
+
+    /*
+    .menu-button {
+      display: none;
+    }
+
+    .cloce-menu {
+      display: none;
+    }
+    */
   }
+
   &__captions {
     margin: 0 auto;
     width: 592px;
@@ -67,4 +79,32 @@
     }
   }
 
+}
+
+@media (max-width: 1200px) {
+  .header .container {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 657px) {
+  &__navigation {
+    display: block;
+  }
+
+  .menu-button {
+    cursor: pointer;
+    width: 28px;
+    height: auto;
+  }
+
+  .cloce-menu {
+    width: 28px;
+    height: auto;
+    background: url(../images/cancel.png) no-repeat 50% 50%;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+    transition: 0.5s;
+  }
 }
