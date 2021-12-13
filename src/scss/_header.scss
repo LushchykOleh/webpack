@@ -21,6 +21,10 @@
     a {
       padding-left: 30px;
       color: white;
+
+      @include media(1200) {
+        color: #f00;
+      }
     }
 
     /*

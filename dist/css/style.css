@@ -66,6 +66,9 @@ table {
     .header__navigation a {
       padding-left: 30px;
       color: white; }
+      @media (max-width: 1200px) {
+        .header__navigation a {
+          color: #f00; } }
   .header__captions {
     margin: 0 auto;
     width: 592px;
@@ -123,7 +126,6 @@ table {
   min-height: 100vh;
   background: url(../images/banner.jpg) no-repeat 50% 100%;
   background-size: cover;
-  position: relative;
   top: 0;
   left: 0; }
 
