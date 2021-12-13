@@ -3,31 +3,48 @@
   left: 0;
   top: 0;
   width: 100%;
+  font-family: $font-montserrat;
+  z-index: 5;
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: $font-color-banner;
+  }
+
+  &__container {
+    padding-top: 33px;
+  }
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 0;
+    /*padding: 35px 0;*/
   }
 
+  /*
   &__logo {
     font-size: 24px;
     font-weight: bold;
     color: white;
-  }
+  }*/
 
   &__navigation {
     a {
-      padding-left: 30px;
-      color: white;
+      margin: 0 16px 0;
+      line-height: 1.714;
+      color: &font-color-banner;
 
-      @include screen(1200) {
-        color: #f00;
+      &:last-child {
+        margin-right: 15px;
       }
     }
+  }
+}
 
-    /*
+/*
     .menu-button {
       display: none;
     }
@@ -35,10 +52,7 @@
     .cloce-menu {
       display: none;
     }
-    */
-  }
-
-  &__captions {
+      &__captions {
     margin: 0 auto;
     width: 592px;
     height: 190px;
@@ -112,3 +126,4 @@
     transition: 0.5s;
   }
 }
+    */

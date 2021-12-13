@@ -96,6 +96,14 @@ const config = {
                 quality: '80',
                 progressive: true
             }
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: "src/bg-images",
+                    to: "bg-images"
+                }
+            ]
         })
     ]
 };
