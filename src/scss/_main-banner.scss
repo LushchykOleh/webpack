@@ -16,7 +16,7 @@
     padding: 305px 0 260px;
   }
 
-  /*
+
   &__title3 {
     font: 400 48px/1.5 $font-montserrat;
     color: $font-color-banner;
@@ -29,9 +29,9 @@
     color: $font-color-banner;
     padding-bottom: 52px;
   }
-*/
 
-  /* &__button {
+
+  &__button {
     border: 2px solid $font-color-banner;
     font: 400 16px/1.5 $font-montserrat;
     color: $font-color-banner;
@@ -42,7 +42,7 @@
 
     &:hover {
       background: $font-color-banner;
-      color: #f00;
+      color: $red;
     }
-  }*/
+  }
 }

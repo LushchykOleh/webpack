@@ -3,37 +3,38 @@
   left: 0;
   top: 0;
   width: 100%;
-
+  font-family: $font-montserrat;
+  transition: .3s;
+  z-index: 5;
 
   &__logo {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.5;
+    color: $font-color-banner;
   }
 
   &__container {
     padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  &.sticky {
+    background: $red;
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .2);
   }
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*padding: 35px 0;*/
   }
-
-  /*
-  &__logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-  }*/
 
   &__navigation {
     a {
       margin: 0 16px 0;
       line-height: 1.714;
-
+      color: $font-color-banner;
 
       &:last-child {
         margin-right: 15px;
@@ -41,87 +42,3 @@
     }
   }
 }
-
-/*
-    .menu-button {
-      display: none;
-    }
-
-    .cloce-menu {
-      display: none;
-    }
-      &__captions {
-    margin: 0 auto;
-    width: 592px;
-    height: 190px;
-    text-align: center;
-    padding-top: 120px;
-
-    h1 {
-      color: white;
-      font-size: 48px;
-      font-weight: 400;
-    }
-
-    p {
-      color: white;
-      font-size: 20px;
-      font-family: $font-roboto;
-      padding: 30px 0;
-    }
-
-    .button {
-      padding: 50px 0;
-      margin: 0 auto;
-      width: 184px;
-      height: 52px;
-    }
-
-    a {
-      cursor: pointer;
-      transition: 0.4s;
-      border: 2px solid white;
-      padding: 15px 30px;
-      font-family: $font-montserrat;
-      font-size: 16px;
-      font-weight: 400;
-      color: #c0301c;
-
-    }
-
-    a:hover {
-      color: #c0301c;
-      background: white;
-    }
-  }
-
-}
-
-@media (max-width: 1200px) {
-  .header .container {
-    padding: 20px 15px;
-  }
-}
-
-@media (max-width: 657px) {
-  &__navigation {
-    display: block;
-  }
-
-  .menu-button {
-    cursor: pointer;
-    width: 28px;
-    height: auto;
-  }
-
-  .cloce-menu {
-    width: 28px;
-    height: auto;
-    background: url(../images/cancel.png) no-repeat 50% 50%;
-    cursor: pointer;
-    right: 20px;
-    top: 20px;
-    transition: 0.5s;
-  }
-}
-    */

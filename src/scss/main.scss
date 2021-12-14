@@ -1,5 +1,8 @@
 @import 'variables';
 @import 'mixins';
+@import '~swiper/swiper.scss';
+@import '~swiper/modules/navigation/navigation';
 @import 'base';
 @import 'header';
 @import 'main-banner';
+@import 'about';
