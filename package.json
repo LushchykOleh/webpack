@@ -1,7 +1,7 @@
 {
-  "name": "webpack",
+  "name": "Bicycle",
   "version": "1.0.0",
-  "description": "webpack template",
+  "description": "Bicycle template",
   "main": "src/index.js",
   "scripts": {
     "watch": "webpack --mode development --watch",
@@ -30,6 +30,7 @@
     "imagemin-webpack-plugin": "^2.4.2",
     "jquery": "^3.4.1",
     "mini-css-extract-plugin": "^0.8.0",
+    "swiper": "^7.3.1",
     "wowjs": "^1.1.3"
   },
   "browserslist": {

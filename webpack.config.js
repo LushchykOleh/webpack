@@ -102,9 +102,9 @@ const config = {
                 {
                     from: "src/bg-images",
                     to: "bg-images"
-                }
-            ]
-        })
+                },
+            ],
+        }),
     ]
 };
 
