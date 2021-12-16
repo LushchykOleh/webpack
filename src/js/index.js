@@ -11,6 +11,10 @@ $(document).ready(function (){
             delay: 5000,
         },
         breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
             580: {
                 slidesPerView: 2,
                 spaceBetween: 20
