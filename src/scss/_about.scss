@@ -74,19 +74,24 @@
 
   }
 
+  //style ----
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
+    top: 43%;
     left: 0;
-    right: 0;
+    color: #dddddd;
+    background-color: #555;
   }
 
-  .swiper-button {
-    background: crimson;
+  .swiper-button-prev:hover {
     width: 36px;
-    height: 36px;
+    height: 46px;
+    background: crimson;
   }
 
 
+
+  //-------
 
   &__photo {
     position: relative;

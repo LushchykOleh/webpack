@@ -1,4 +1,4 @@
-window.$ = window.jQuery = require('jquery');
+ window.$ = window.jQuery = require('jquery');
 import Swiper, { Autoplay, Navigation } from 'swiper';
 
 Swiper.use([ Autoplay, Navigation ]);
