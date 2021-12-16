@@ -1,7 +1,7 @@
 .about {
 
   &__top {
-    padding: 50px 0 70px;
+    padding: 50px 0 35px;
   }
 
   &__container {
@@ -19,13 +19,13 @@
     .text-16 {
       font: 400 16px/1.5 $font-montserrat;
       color: $font-color;
-      padding-bottom: 70px;
+      padding-bottom: 35px;
       text-align: center;
     }
   }
 
   &__row {
-    padding: 68px 0 68px;
+    padding: 35px 0 35px;
 
     .top-colum {
       display: inline-block;
