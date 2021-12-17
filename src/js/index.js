@@ -1,6 +1,21 @@
  window.$ = window.jQuery = require('jquery');
 import Swiper, { Autoplay, Navigation } from 'swiper';
 
+//menu mobail
+$(document).ready(function () {
+    $('.menu').on('click', function () {
+        $('.navigation').slideToggle();
+    })
+});
+
+$(window).resize(function () {
+    const windowWidth = $(window).outerWidth();
+    if(windowWidth > 750){
+        $('.navigation').attr('style');
+    }
+})
+//--
+
 Swiper.use([ Autoplay, Navigation ]);
 
 $(document).ready(function (){

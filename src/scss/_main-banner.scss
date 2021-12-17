@@ -22,12 +22,24 @@
     color: $font-color-banner;
     text-transform: uppercase;
     padding-bottom: 7px;
+
+    @include screen(640) {
+      font-size: 36px;
+      text-align: center;
+    }
   }
+
+
 
   &__text {
     font: 400 20px/1.2 $font-roboto;
     color: $font-color-banner;
     padding-bottom: 52px;
+
+    @include screen(640) {
+      font-size: 18px;
+      text-align: center;
+    }
   }
 
 
