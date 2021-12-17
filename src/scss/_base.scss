@@ -74,4 +74,22 @@ table {
     width: calc(33.3% - 30px);
     flex-shrink: 0;
     margin: 15px;
+
+    @include screen(1150) {
+        width: calc(48% - 20px);
+
+    }
+
+    @include screen(600) {
+        width: calc(46% - 20px);
+        height: auto;
+
+    }
+
+    @include screen(400) {
+        width: calc(80% - 20px);
+        height: auto;
+        margin: 40px;
+
+    }
 }

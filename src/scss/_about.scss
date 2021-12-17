@@ -31,7 +31,15 @@
       display: inline-block;
       width: 47%;
       vertical-align: top;
+
+      @include screen(600) {
+        display: block;
+        width: 100%;
+
+      }
+
     }
+
 
     :nth-child(1) {
       margin-right: 15px;
@@ -39,7 +47,13 @@
 
     p {
       font-size: 14px;
+
+      @include screen(600) {
+        font-size: 16px;
+      }
     }
+
+
   }
 
 
