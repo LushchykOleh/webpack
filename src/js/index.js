@@ -1,5 +1,5 @@
  window.$ = window.jQuery = require('jquery');
-import Swiper, { Autoplay, Navigation } from 'swiper';
+import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 
 //menu mobail
 $(document).ready(function () {
@@ -16,10 +16,11 @@ $(window).resize(function () {
 })
 //--
 
-Swiper.use([ Autoplay, Navigation ]);
+Swiper.use([ Autoplay, Navigation, Pagination ]);
 
 $(document).ready(function (){
 
+    //about slider 
     const swiper = new Swiper('.swiper-about', {
         loop: true,
         autoplay: {
@@ -49,6 +50,23 @@ $(document).ready(function (){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+
+    //Client slider
+    const client_swiper = new Swiper('.client_swiper', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoHeight:true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+          },
+       
     });
 
     //Tabs

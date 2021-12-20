@@ -1,52 +1,110 @@
 .blog {
+  padding: 95px 0 70px;
 
-  &__banner {
+  /* .blog-description {
+    padding-bottom: 27px;
+  }*/
 
-    background-size: cover;
-    width: 100%;
-    min-height: 200px;
-
-  }
-
-  &__call {
-    text-align: center;
-    padding: 0 0 95px;
-  }
-
-  &__call-title-30 {
-    color: $white;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    width: 520px;
-    height: auto;
-    max-width: 1140px;
-    margin: 0 auto;
-    overflow: hidden;
-
-    @include screen(540) {
-      font-style: 24px;
-    }
-  }
-
-  &__button-call {
-    color: $white;
-    border: 2px solid $white;
-    width: 180px;
-    height: 50px;
-    font: 400 18px/1.5 $font-roboto;
-    text-transform: uppercase;
-    padding: 10px 0;
-    background: rgba(0, 0, 0, 0);
-
+  a {
+    transition: .3s;
 
     &:hover {
-      background: $white;
       color: $red;
-      transition: .3s;
+    }
+  }
+
+  &__container {
+
+    .blog-description {
+      text-align: center;
+      padding: 0 0 27px;
+    }
+  }
+
+  &__list {}
+
+  &__item {
+    display: flex;
+    padding: 38px 0;
+
+    &+.blog__item {
+      border-top: 1px solid #ddd;
+    }
+  }
+
+  &__img {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__description {
+    flex-grow: 1;
+    padding-left: 40px;
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+
+  }
+
+  &__date {
+    width: 76px;
+    height: 76px;
+    flex-shrink: 0;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-montserrat;
+    font-style: 24px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 5px;
+    color: $grey;
+    letter-spacing: 2px;
+    border: 2px solid $font-color;
+
+    span {
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 8px 0 0;
+
+
     }
 
   }
+
+  &__title1 {
+
+    &>a {
+      text-transform: uppercase;
+      display: block;
+      margin: 0 0 15px;
+      font-size: 16px;
+      font-family: $font-montserrat;
+    }
+
+    div {
+      font-style: italic;
+      font-size: 13px;
+      color: $grey;
+    }
+  }
+
+  &__preview {
+    margin: 0 0 26px;
+    line-height: 1.7;
+  }
+
+  &__link {
+    color: $grey;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
 }
