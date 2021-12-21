@@ -1,5 +1,5 @@
 .services {
-  padding: 100px 0 100px;
+  padding: 100px 0 63px;
 
   &__row-top {
     .text-16 {
@@ -36,16 +36,18 @@
 
     .services-img {
       text-align: center;
+      padding-left: 16px;
     }
 
     h5 {
-      padding: 30px 0 25px;
+      padding: 18px 0 15px;
+      letter-spacing: 1.5px;
       font: 400 14px/1.5 $font-montserrat;
       color: $font-color;
       text-align: center;
     }
 
-    .text {
+    .text-14 {
       font: 400 14px/1.5 $font-roboto;
       color: $font-color;
       text-align: center;
