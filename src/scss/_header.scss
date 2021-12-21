@@ -11,6 +11,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 1.5;
+    letter-spacing: 0.1px;
     color: $font-color-banner;
 
     @include screen(750) {
@@ -69,6 +70,8 @@
   //---
   &__navigation {
 
+
+
     @include screen(750) {
       display: block;
       position: fixed;
@@ -112,8 +115,9 @@
   &__navigation {
 
     a {
-      margin: 0 16px 0;
+      margin: 0 13px 0;
       line-height: 1.714;
+      letter-spacing: 0.5px;
       color: $font-color-banner;
 
       &:last-child {
