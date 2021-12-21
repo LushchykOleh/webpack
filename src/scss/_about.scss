@@ -91,18 +91,40 @@
   }
 
   //style ----
-  .swiper-button-prev,
-  .swiper-rtl .swiper-button-next {
+
+
+  .swiper-button-prev {
+    width: 36px;
+    height: 38px;
     top: 43%;
     left: 0;
     color: #dddddd;
     background-color: #555;
+
+    &::after {
+      font-size: 24px;
+    }
+
+    &:hover {
+      background-color: $red;
+    }
   }
 
-  .swiper-button-prev:hover {
+  .swiper-button-next {
     width: 36px;
-    height: 46px;
-    background: crimson;
+    height: 38px;
+    top: 43%;
+    right: 0;
+    color: #dddddd;
+    background-color: #555;
+
+    &::after {
+      font-size: 24px;
+    }
+
+    &:hover {
+      background-color: $red;
+    }
   }
 
 
