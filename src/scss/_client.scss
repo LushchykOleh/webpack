@@ -40,7 +40,13 @@
     p {
       margin: 0 auto 28px;
       max-width: 780px;
+
+      @include screen(810) {
+        padding: 15px;
+      }
     }
+
+
   }
 
   &__swiper-autor {
