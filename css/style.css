@@ -413,7 +413,7 @@ section {
   text-align: center;
   position: relative;
   padding-bottom: 27px;
-  margin-bottom: 23px; }
+  margin-bottom: 17px; }
   .title-20:after {
     content: '';
     position: absolute;
@@ -545,7 +545,7 @@ section {
       &.activ {}
     }*/ }
     .header__navigation a {
-      margin: 0 16px 0;
+      margin: 0 14px 0;
       line-height: 1.714;
       color: #fff;
       /*
