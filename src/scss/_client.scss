@@ -6,7 +6,7 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0 0 45px;
+    margin: 58px 0 45px;
 
     li {
       padding: 10px 32px;
@@ -40,7 +40,13 @@
     p {
       margin: 0 auto 28px;
       max-width: 780px;
+
+      @include screen(810) {
+        padding: 15px;
+      }
     }
+
+
   }
 
   &__swiper-autor {
