@@ -183,8 +183,7 @@ section {
         justify-content: space-between;
 
         input[type='text'],
-        input[type='email'],
-            {
+        input[type='email'] {
             width: calc(50% - 15px);
         }
     }
