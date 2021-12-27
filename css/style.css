@@ -382,7 +382,8 @@ img {
 
 body {
   font: 400 14px/1.25 "Roboto Slab", "Times New Roman", serif;
-  color: #555; }
+  color: #555;
+  background: #f00; }
 
 a {
   text-decoration: underline;
@@ -489,7 +490,7 @@ section {
     .header {
       padding-left: 15px; } }
   .header__container {
-    padding-top: 33px;
+    padding-top: 35px;
     padding-bottom: 33px; }
   .header.sticky {
     background: #c0302c;
@@ -546,7 +547,7 @@ section {
       &.activ {}
     }*/ }
     .header__navigation a {
-      margin: 0 13px 0;
+      margin: 0 14px 0;
       line-height: 1.714;
       letter-spacing: 0.5px;
       color: #fff;
@@ -576,7 +577,7 @@ section {
     font: 400 48px/1.5 "Montserrat", Arial, Tahoma, sans-serif;
     color: #fff;
     text-transform: uppercase;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
     letter-spacing: 0.8px; }
     @media (max-width: 640px) {
       .main-banner__title3 {
@@ -609,7 +610,8 @@ section {
     font: 400 16px/1.5 "Montserrat", Arial, Tahoma, sans-serif;
     color: #555;
     padding-bottom: 35px;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: -0.4px; }
   .services__row {
     display: flex;
     flex-wrap: wrap;
