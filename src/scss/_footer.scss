@@ -1,0 +1,58 @@
+.footer {
+
+  height: 308px;
+  background: $red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__sociale {
+    display: block;
+    position: relative;
+    padding: 28px;
+    transition: .3s;
+
+    a {
+
+      img {
+        width: 36px;
+        height: 36px;
+        color: $white;
+
+      }
+
+      &:hover {
+        width: 36px;
+        height: 36px;
+        background-image: url(../images/twitter-hover.png) no-repeat;
+      }
+
+
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 25px);
+      width: 50px;
+      height: 2px;
+      background: $white;
+
+    }
+
+
+  }
+
+  a {
+    margin-right: 12px;
+  }
+
+  p {
+    padding: 28px;
+    font: $font-roboto;
+    font-size: 12px;
+    color: $white;
+  }
+}
