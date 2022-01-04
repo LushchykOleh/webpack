@@ -16,6 +16,22 @@ $(window).resize(function () {
 })
 //--
 
+//Anchor links
+$('a').on('click', function (e) {
+    e.preventDefault();
+    const hh = $('.header').outerHeight();
+    if(this.hash !=='') {
+        const hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - hh
+        }, 360, function () {
+            window.location.hash = hash - hh;
+        })
+    }
+})
+
+
+
 Swiper.use([ Autoplay, Navigation, Pagination ]);
 
 $(document).ready(function (){

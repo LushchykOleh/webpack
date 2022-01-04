@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  font: 400 14px/1.25 "Roboto Slab", "Times New Roman", serif;
+  color: #555; }
+
+a {
+  text-decoration: underline;
+  color: #000;
+  text-decoration: none; }
+
+input {
+  outline: none; }
+
+table {
+  border-collapse: collapse; }
+
+.wrapper {
+  overflow: hidden;
+  position: relative; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.banner {
+  max-width: 1600px;
+  margin: 0 auto; }
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0; }
+  .header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; }
+  .header__navigation {
+    /*
+    .menu-button {
+      display: none;
+    }
+
+    .cloce-menu {
+      display: none;
+    }
+    */ }
+    .header__navigation a {
+      padding-left: 30px;
+      color: white; }
+      @media (max-width: 1200px) {
+        .header__navigation a {
+          color: #f00; } }
+  .header__captions {
+    margin: 0 auto;
+    width: 592px;
+    height: 190px;
+    text-align: center;
+    padding-top: 120px; }
+    .header__captions h1 {
+      color: white;
+      font-size: 48px;
+      font-weight: 400; }
+    .header__captions p {
+      color: white;
+      font-size: 20px;
+      font-family: "Roboto Slab", "Times New Roman", serif;
+      padding: 30px 0; }
+    .header__captions .button {
+      padding: 50px 0;
+      margin: 0 auto;
+      width: 184px;
+      height: 52px; }
+    .header__captions a {
+      cursor: pointer;
+      transition: 0.4s;
+      border: 2px solid white;
+      padding: 15px 30px;
+      font-family: "Montserrat", Arial, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #c0301c; }
+    .header__captions a:hover {
+      color: #c0301c;
+      background: white; }
+
+@media (max-width: 1200px) {
+  .header .container {
+    padding: 20px 15px; } }
+
+@media (max-width: 657px) {
+  __navigation {
+    display: block; }
+  .menu-button {
+    cursor: pointer;
+    width: 28px;
+    height: auto; }
+  .cloce-menu {
+    width: 28px;
+    height: auto;
+    background: url(../images/cancel.png) no-repeat 50% 50%;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+    transition: 0.5s; } }
+
+.banner {
+  min-height: 100vh;
+  background: url(../images/banner.jpg) no-repeat 50% 100%;
+  background-size: cover;
+  top: 0;
+  left: 0; }
+
+
+/*# sourceMappingURL=style.css.map*/
