@@ -373,6 +373,26 @@
   padding: 0;
   box-sizing: border-box; }
 
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(146, 146, 146, 0.502);
+  text-transform: uppercase; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(146, 146, 146, 0.502);
+  text-transform: uppercase; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(146, 146, 146, 0.502);
+  text-transform: uppercase; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(146, 146, 146, 0.502);
+  text-transform: uppercase; }
+
 ul {
   list-style: none; }
 
@@ -383,7 +403,9 @@ img {
 body {
   font: 400 14px/1.25 "Roboto Slab", "Times New Roman", serif;
   color: #555;
-  background: #f00; }
+ 
+  color: #555;
+  background: #c0302c; }
 
 a {
   text-decoration: underline;
