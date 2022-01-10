@@ -14,22 +14,24 @@
     transition: .3s;
 
     a {
+      margin-right: 12px;
 
       img {
         width: 36px;
         height: 36px;
-        color: $white;
 
       }
 
-      &:hover {
+      :hover {
         width: 36px;
         height: 36px;
-        background-image: url(../images/twitter-hover.png) no-repeat;
+        background-image: url(../images/footer1-1.png);
+
       }
 
-
     }
+
+
 
     &:after {
       content: '';
@@ -45,9 +47,6 @@
 
   }
 
-  a {
-    margin-right: 12px;
-  }
 
   p {
     padding: 28px;
