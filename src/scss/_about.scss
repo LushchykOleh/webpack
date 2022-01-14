@@ -19,7 +19,7 @@
 
   &__top-row {
     .text-16 {
-      font: 400 16px/1.5 $font-montserrat;
+      font: 400 16px/1.5 $font-roboto;
       color: $font-color;
       padding-bottom: 35px;
       text-align: center;
@@ -38,6 +38,14 @@
         display: block;
         width: 100%;
 
+      }
+
+      .title-14 {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $font-roboto;
+        line-height: 1.714;
+        text-transform: none;
       }
 
     }

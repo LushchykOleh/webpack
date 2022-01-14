@@ -748,7 +748,7 @@ section {
     text-align: center;
     padding: 100px 0 30px; }
   .about__top-row .text-16 {
-    font: 400 16px/1.5 "Montserrat", Arial, Tahoma, sans-serif;
+    font: 400 16px/1.5 "Roboto Slab", "Times New Roman", serif;
     color: #555;
     padding-bottom: 35px;
     text-align: center; }
@@ -762,6 +762,12 @@ section {
         .about__row .top-colum {
           display: block;
           width: 100%; } }
+      .about__row .top-colum .title-14 {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Roboto Slab", "Times New Roman", serif;
+        line-height: 1.714;
+        text-transform: none; }
     .about__row :nth-child(1) {
       margin-right: 15px; }
     .about__row p {
