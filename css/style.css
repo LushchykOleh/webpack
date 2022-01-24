@@ -773,7 +773,7 @@ section {
   .about__top {
     padding: 0 0 35px; }
   .about__container {
-    padding: 0; }
+    max-height: 300px; }
     .about__container .top-row h4 {
       text-align: center;
       padding: 100px 0 30px; }
@@ -795,17 +795,6 @@ section {
         .about__row .top-colum {
           display: block;
           width: 100%; } }
-<<<<<<< HEAD
-=======
-      .about__row .top-colum .title-14 {
-        font-size: 14px;
-        font-weight: 400;
-        font-family: "Roboto Slab", "Times New Roman", serif;
-        line-height: 1.714;
-        text-transform: none; }
-    .about__row :nth-child(1) {
-      margin-right: 15px; }
->>>>>>> 5a78c2e8643b59d1eccad7b8673b3f55e679c903
     .about__row p {
       font: 400 14px/1.5 "Roboto Slab", "Times New Roman", serif;
       color: #555;
