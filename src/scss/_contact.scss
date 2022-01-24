@@ -34,6 +34,8 @@
       padding: 35px 0;
     }
 
+
+
     &__footer{
       @include screen(1024){
         align-items: baseline;
@@ -53,8 +55,7 @@
     }
 
     @include screen(580) {
-      display: block;
-      margin-bottom: 22px;
+      display: block;margin-bottom: 20px;
     }
 
     a {
