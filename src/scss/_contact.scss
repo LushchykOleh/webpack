@@ -1,9 +1,15 @@
 .contact {
 
+  @include screen(1024){
+    padding: 40px 0;
+  }
 
   .container {
     p {
       text-align: center;
+      @include screen(1024){
+        margin-bottom: 35px;
+      }
     }
   }
 
@@ -11,12 +17,30 @@
     display: flex;
     margin-top: 70px;
 
+    @include screen(1024){
+      flex-direction: column;
+      margin-top: 35px;
+      display: block;
+    }
   }
 
   &__form {
     max-width: 730px;
     flex-basis: 730px;
     flex-grow: 1;
+
+    @include screen(1024){
+      margin: 0 auto;
+      padding: 35px 0;
+    }
+
+
+
+    &__footer{
+      @include screen(1024){
+        align-items: baseline;
+      }
+    }
   }
 
   &__info {
@@ -24,6 +48,15 @@
     padding-right: 30px;
     font-size: 12px;
     line-height: 20px;
+
+    @include screen(1024) {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @include screen(580) {
+      display: block;margin-bottom: 20px;
+    }
 
     a {
       font-size: 12px;
@@ -41,6 +74,10 @@
 
       &+.contact__info-item {
         margin-top: 28px;
+
+        @include screen(1024){
+          margin-top: 0;
+        }
       }
 
       img {

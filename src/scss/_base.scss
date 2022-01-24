@@ -175,6 +175,10 @@ section {
 
     &__row {
         margin: 0 0 20px;
+
+        @include screen(600) {
+            margin: 0;
+        }
     }
 
     &__group {
@@ -182,9 +186,18 @@ section {
         display: flex;
         justify-content: space-between;
 
+        @include screen(600) {
+            display: block;
+        }
+
         input[type='text'],
         input[type='email'] {
             width: calc(50% - 15px);
+
+            @include screen(600) {
+                width: calc(100% - 15px);
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -194,8 +207,29 @@ section {
         flex-wrap: wrap;
         align-items: center;
 
+        @include screen(600){
+            margin-top: 20px;
+        }
+
+        @include screen(385) {
+            justify-content: center;
+        }
+
         .button-dark {
             margin-right: 38px;
+
+            @include screen(580) {
+                margin-bottom: 20px;
+            }
+
+            @include screen(385){
+                margin-right: 0;
+            }
         }
     }
+
+    @include screen(1024){
+        flex-wrap: nowrap;
+        align-items: flex-start;
+      }
 }

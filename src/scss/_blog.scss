@@ -8,6 +8,10 @@
 
   a {
     transition: .3s;
+    
+    @include screen(1024) {
+      padding: 0 15px;
+    }
 
     &:hover {
       color: $red;

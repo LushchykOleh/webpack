@@ -7,7 +7,7 @@
   }
 
   &__container {
-
+padding: 0;
     .top-row {
 
       h4 {
@@ -19,7 +19,7 @@
 
   &__top-row {
     .text-16 {
-      font: 400 16px/1.5 $font-montserrat;
+      font: 400 16px/1.5 $font-roboto;
       color: $font-color;
       padding-bottom: 35px;
       text-align: center;
@@ -29,26 +29,35 @@
   &__row {
     padding: 35px 0 35px;
 
+    .container {
+      padding: 0;
+    }
+
     .top-colum {
       display: inline-block;
-      width: 47%;
+      width: calc(50% - 15px);
       vertical-align: top;
+      padding: 0 15px;
 
       @include screen(600) {
         display: block;
         width: 100%;
 
       }
-
     }
 
-
-    :nth-child(1) {
-      margin-right: 15px;
-    }
+    // &:nth-child(1) {
+    //   margin-right: 13px;
+    // }
 
     p {
-      font-size: 14px;
+      
+      font: 400 14px/1.5 $font-roboto;
+      color: $font-color;
+      // padding-bottom: 35px;
+      text-align: center;
+      text-transform: none;
+      text-align: start;
 
       @include screen(600) {
         font-size: 16px;
