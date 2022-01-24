@@ -55,7 +55,8 @@
     }
 
     @include screen(580) {
-      display: block;margin-bottom: 20px;
+      display: block;
+      margin-bottom: 20px;
     }
 
     a {
