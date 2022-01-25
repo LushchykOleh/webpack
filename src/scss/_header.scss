@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   font-family: $font-montserrat;
-  transition: .3s;
+  transition: 0.3s;
   z-index: 5;
 
   &__logo {
@@ -18,17 +18,15 @@
       position: fixed;
       justify-content: space-between;
       align-items: flex-end;
-      top: 0;
-      left: 0;
-      padding: 30px;
+      // top: 0;
+      // left: 0;
+      // padding: 30px;
     }
   }
 
   @include screen(1200) {
     padding-left: 15px;
   }
-
-
 
   &__container {
     padding-top: 35px;
@@ -37,7 +35,7 @@
 
   &.sticky {
     background: $red;
-    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
   }
 
   .container {
@@ -65,13 +63,8 @@
     &:hover {}
   }*/
 
-
-
   //---
   &__navigation {
-
-
-
     @include screen(750) {
       display: block;
       position: fixed;
@@ -85,7 +78,7 @@
       border-radius: 35px 0 0 35px;
       right: -155px;
       top: 0;
-      transition: .4s;
+      transition: 0.4s;
       cursor: pointer;
 
       &::after {
@@ -111,9 +104,7 @@
 
   //---
 
-
   &__navigation {
-
     a {
       margin: 0 14px 0;
       line-height: 1.714;
@@ -150,11 +141,4 @@
       &.activ {}
     }*/
   }
-
-
-
-
-
-
-
 }
