@@ -7,7 +7,7 @@
   }*/
 
   a {
-    transition: .3s;
+    transition: 0.3s;
 
     &:hover {
       color: $red;
@@ -15,7 +15,6 @@
   }
 
   &__container {
-
     .blog-description {
       text-align: center;
       padding: 7px 0 31px;
@@ -23,20 +22,17 @@
     }
   }
 
-
-
   &__item {
     display: flex;
     padding: 38px 0;
 
-    &+.blog__item {
+    & + .blog__item {
       border-top: 1px solid #ddd;
     }
 
     @include screen(1024) {
       display: block;
     }
-
   }
 
   &__img {
@@ -96,15 +92,11 @@
       text-transform: uppercase;
       font-size: 14px;
       padding: 8px 0 0;
-
-
     }
-
   }
 
   &__title1 {
-
-    &>a {
+    & > a {
       text-transform: uppercase;
       display: block;
       margin: 0 0 15px;
@@ -124,7 +116,7 @@
     line-height: 1.7;
 
     @include screen(1024) {
-      padding: 0 15px;
+      padding: 0;
     }
   }
 
@@ -133,5 +125,4 @@
     text-transform: uppercase;
     font-size: 13px;
   }
-
 }

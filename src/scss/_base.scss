@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap");
 
 * {
     margin: 0;
@@ -82,7 +82,7 @@ section {
     margin-bottom: 17px;
 
     &:after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: calc(50% - 25px);
@@ -105,20 +105,17 @@ section {
 
     @include screen(1150) {
         width: calc(48% - 20px);
-
     }
 
     @include screen(600) {
         width: calc(46% - 20px);
         height: auto;
-
     }
 
     @include screen(400) {
         width: calc(80% - 20px);
         height: auto;
         margin: 40px;
-
     }
 }
 
@@ -134,9 +131,8 @@ section {
 }
 
 .form {
-
-    input[type='text'],
-    input[type='email'],
+    input[type="text"],
+    input[type="email"],
     textarea,
     .button-dark {
         border: 1px solid $font-color;
@@ -149,7 +145,6 @@ section {
 
         &:focus {
             border-color: $red;
-
         }
     }
 
@@ -160,11 +155,10 @@ section {
 
     .button-dark {
         text-align: center;
-        transition: .3s;
+        transition: 0.3s;
         text-transform: uppercase;
         max-width: 170px;
         background: $white;
-
 
         &:hover {
             background: $red;
@@ -175,6 +169,10 @@ section {
 
     &__row {
         margin: 0 0 20px;
+
+        @include screen(600) {
+            margin: 0;
+        }
     }
 
     &__group {
@@ -182,9 +180,18 @@ section {
         display: flex;
         justify-content: space-between;
 
-        input[type='text'],
-        input[type='email'] {
+        @include screen(600) {
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"] {
             width: calc(50% - 15px);
+
+            @include screen(600) {
+                width: calc(100% - 15px);
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -194,8 +201,29 @@ section {
         flex-wrap: wrap;
         align-items: center;
 
+        @include screen(600) {
+            margin-top: 20px;
+        }
+
+        @include screen(385) {
+            justify-content: center;
+        }
+
         .button-dark {
             margin-right: 38px;
+
+            @include screen(580) {
+                margin-bottom: 20px;
+            }
+
+            @include screen(385) {
+                margin-right: 0;
+            }
         }
+    }
+
+    @include screen(1024) {
+        flex-wrap: nowrap;
+        align-items: flex-start;
     }
 }
