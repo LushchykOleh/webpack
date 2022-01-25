@@ -1,5 +1,4 @@
 .about {
-
   background: $grey-section;
 
   &__top {
@@ -7,9 +6,7 @@
   }
 
   &__container {
-
     .top-row {
-
       h4 {
         text-align: center;
         padding: 100px 0 30px;
@@ -19,7 +16,7 @@
 
   &__top-row {
     .text-16 {
-      font: 400 16px/1.5 $font-montserrat;
+      font: 400 16px/1.5 $font-roboto;
       color: $font-color;
       padding-bottom: 35px;
       text-align: center;
@@ -37,28 +34,25 @@
       @include screen(600) {
         display: block;
         width: 100%;
-
       }
-
     }
 
-
-    :nth-child(1) {
-      margin-right: 15px;
-    }
+    // :nth-child(1) {
+    //   margin-right: 15px;
+    // }
 
     p {
       font-size: 14px;
+      font-family: $font-roboto;
+      font-weight: 400;
+      text-transform: none;
+      color: #555;
 
       @include screen(600) {
         font-size: 16px;
       }
     }
-
-
   }
-
-
 
   &__socials {
     position: absolute;
@@ -69,7 +63,7 @@
     align-items: center;
     justify-content: center;
     padding: 15px 5px 30px;
-    transition: .3s;
+    transition: 0.3s;
     z-index: 2;
   }
 
@@ -87,11 +81,9 @@
       color: $font-color;
       font-family: $font-montserrat;
     }
-
   }
 
   //style ----
-
 
   .swiper-button-prev {
     width: 36px;
@@ -127,8 +119,6 @@
     }
   }
 
-
-
   //-------
 
   &__photo {
@@ -142,7 +132,7 @@
     }
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -150,12 +140,11 @@
       height: 100%;
       z-index: 1;
       opacity: 0;
-      transition: .4s;
-      background: rgba(85, 85, 85, .5);
+      transition: 0.4s;
+      background: rgba(85, 85, 85, 0.5);
     }
 
     &:hover {
-
       &:before {
         opacity: 1;
       }
