@@ -227,3 +227,233 @@ section {
         align-items: flex-start;
     }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(146, 146, 146, 0.502);
+    text-transform: uppercase;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(146, 146, 146, 0.502);
+    text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(146, 146, 146, 0.502);
+    text-transform: uppercase;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(146, 146, 146, 0.502);
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font: 400 14px/1.25 $font-roboto;
+    color: $font-color;
+}
+
+a {
+    text-decoration: underline;
+    color: #000;
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+section {
+    padding: 92px 0;
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title-20 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: 27px;
+    margin-bottom: 17px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 25px);
+        width: 50px;
+        height: 2px;
+        background: $font-color;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-33 {
+    width: calc(33.3% - 30px);
+    flex-shrink: 0;
+    margin: 15px;
+
+    @include screen(1150) {
+        width: calc(48% - 20px);
+    }
+
+    @include screen(600) {
+        width: calc(46% - 20px);
+        height: auto;
+    }
+
+    @include screen(400) {
+        width: calc(80% - 20px);
+        height: auto;
+        margin: 40px;
+    }
+}
+
+.title-14 {
+    font-family: $font-montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+}
+
+.red {
+    color: $red;
+}
+
+.form {
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    .button-dark {
+        border: 1px solid $font-color;
+        height: 44px;
+        padding: 5px 15px;
+        outline: none;
+        font-size: 12px;
+        width: 100%;
+        font-family: $font-roboto;
+
+        &:focus {
+            border-color: $red;
+        }
+    }
+
+    textarea {
+        height: 104px;
+        resize: vertical;
+    }
+
+    .button-dark {
+        text-align: center;
+        transition: 0.3s;
+        text-transform: uppercase;
+        max-width: 170px;
+        background: $white;
+
+        &:hover {
+            background: $red;
+            border-color: $red;
+            color: $white;
+        }
+    }
+
+    &__row {
+        margin: 0 0 20px;
+
+        @include screen(600) {
+            margin: 0;
+        }
+    }
+
+    &__group {
+        @extend .form__row;
+        display: flex;
+        justify-content: space-between;
+
+        @include screen(600) {
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: calc(50% - 15px);
+
+            @include screen(600) {
+                width: calc(100% - 15px);
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__footer {
+        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @include screen(600) {
+            margin-top: 20px;
+        }
+
+        @include screen(385) {
+            justify-content: center;
+        }
+
+        .button-dark {
+            margin-right: 38px;
+
+            @include screen(580) {
+                margin-bottom: 20px;
+            }
+
+            @include screen(385) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @include screen(1024) {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+}

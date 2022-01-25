@@ -126,3 +126,136 @@
     font-size: 13px;
   }
 }
+
+.blog {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  /* .blog-description {
+    padding-bottom: 27px;
+  }*/
+
+  a {
+    transition: 0.3s;
+
+    @include screen(1024) {
+      padding: 0 15px;
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__container {
+    .blog-description {
+      text-align: center;
+      padding: 7px 0 31px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding: 38px 0;
+
+    & + .blog__item {
+      border-top: 1px solid #ddd;
+    }
+
+    @include screen(1024) {
+      display: block;
+    }
+  }
+
+  &__img {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+
+    @include screen(1024) {
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include screen(500) {
+      width: 320px;
+    }
+  }
+
+  &__description {
+    flex-grow: 1;
+    padding-left: 40px;
+
+    @include screen(1024) {
+      margin: 10px 0;
+    }
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+
+    @include screen(1024) {
+      justify-content: center;
+    }
+  }
+
+  &__date {
+    width: 76px;
+    height: 76px;
+    flex-shrink: 0;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-montserrat;
+    font-style: 24px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 5px;
+    color: $grey;
+    letter-spacing: 2px;
+    border: 2px solid $font-color;
+
+    span {
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 8px 0 0;
+    }
+  }
+
+  &__title1 {
+    & > a {
+      text-transform: uppercase;
+      display: block;
+      margin: 0 0 15px;
+      font-size: 16px;
+      font-family: $font-montserrat;
+    }
+
+    div {
+      font-style: italic;
+      font-size: 13px;
+      color: $grey;
+    }
+  }
+
+  &__preview {
+    margin: 0 0 26px;
+    line-height: 1.7;
+
+    @include screen(1024) {
+      padding: 0 15px;
+    }
+  }
+
+  &__link {
+    color: $grey;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+}
