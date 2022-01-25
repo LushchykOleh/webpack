@@ -685,7 +685,7 @@ section {
 .services {
   padding: 100px 0 63px; }
   .services__row-top .text-16 {
-    font: 400 16px/1.5 "Montserrat", Arial, Tahoma, sans-serif;
+    font: 400 16px/1.5 "Roboto Slab", "Times New Roman", serif;
     color: #555;
     padding-bottom: 35px;
     text-align: center;
@@ -716,7 +716,8 @@ section {
       letter-spacing: 1.5px;
       font: 400 14px/1.5 "Montserrat", Arial, Tahoma, sans-serif;
       color: #555;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
     .services__row .text-14 {
       font: 400 14px/1.5 "Roboto Slab", "Times New Roman", serif;
       color: #555;
@@ -748,7 +749,7 @@ section {
     text-align: center;
     padding: 100px 0 30px; }
   .about__top-row .text-16 {
-    font: 400 16px/1.5 "Montserrat", Arial, Tahoma, sans-serif;
+    font: 400 16px/1.5 "Roboto Slab", "Times New Roman", serif;
     color: #555;
     padding-bottom: 35px;
     text-align: center; }
@@ -762,10 +763,12 @@ section {
         .about__row .top-colum {
           display: block;
           width: 100%; } }
-    .about__row :nth-child(1) {
-      margin-right: 15px; }
     .about__row p {
-      font-size: 14px; }
+      font-size: 14px;
+      font-family: "Roboto Slab", "Times New Roman", serif;
+      font-weight: 400;
+      text-transform: none;
+      color: #555; }
       @media (max-width: 600px) {
         .about__row p {
           font-size: 16px; } }
@@ -778,7 +781,7 @@ section {
     align-items: center;
     justify-content: center;
     padding: 15px 5px 30px;
-    transition: .3s;
+    transition: 0.3s;
     z-index: 2; }
   .about__socials a {
     padding-left: 14px; }
@@ -818,7 +821,7 @@ section {
     .about__photo img {
       line-height: 0; }
     .about__photo:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -826,7 +829,7 @@ section {
       height: 100%;
       z-index: 1;
       opacity: 0;
-      transition: .4s;
+      transition: 0.4s;
       background: rgba(85, 85, 85, 0.5); }
     .about__photo:hover:before {
       opacity: 1; }
